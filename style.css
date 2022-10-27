@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://ouch-cdn2.icons8.com/QLOLVztzaUM6XZ09kSrtqoMHlhoTqNFWxDlyn_m1XbU/rs:fit:256:192/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTM0/L2U3M2I1YmY4LWM4/Y2YtNDljOC04OTlh/LWE2NjJjNDY0YzJm/ZC5zdmc.png);
+}
+
+#container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#title,
+#result {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#result,
+#timeCount {
+    display: inline-block;
+    padding: 2px 15px;
+    background-color: antiquewhite;
+}
+
+#result {
+    margin-bottom: 0;
+}
+
+#timeCount {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+#msg {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#enterKey,
+#pKey {
+    color: aliceblue;
+    background-color: rgb(50, 111, 172);
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#timeSelect {
+    font-size: 1rem;
+    ;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(250, 248, 245);
+}
+
+.mole {
+    background-image: url(https://img.icons8.com/officexs/452/mole.png);
+    background-size: cover;
+}
+
+footer {
+    background-color: rgb(250, 248, 245);
+    padding: 2px 5px;
+    margin: 5px 0;
+}

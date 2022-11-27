@@ -3,6 +3,8 @@ const timeSelect = document.querySelector('#timeSelect');
 const timeLeftDisplay = document.querySelector('#timeLeftDisplay');
 const squares = document.querySelectorAll('.square');
 const scoreDisplay = document.querySelector('#scoreDisplay');
+const startButton = document.querySelector('#enterKey');
+const pauseButton = document.querySelector('#pKey');
 
 
 //setInterval functions 
@@ -79,6 +81,16 @@ document.addEventListener('keydown', function (e) {
     }
 })
 
+startButton.addEventListener('click', () => {
+    moleMoveInterval();
+    timeCountInterval();
+})
 
+pauseButton.addEventListener('click', () => {
+    clearInterval(moleMoveID);
+    moleMoveID = null;
+    clearInterval(timeCountID);
+    timeCountID = null;
+})
 
 

@@ -4,7 +4,8 @@ html {
 }
 
 body {
-    width: auto;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +14,7 @@ body {
 }
 
 #container {
-    width: 60%;
+    max-width: 610px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,4 +81,29 @@ footer {
     background-color: rgb(250, 248, 245);
     padding: 2px 5px;
     margin: 5px 0;
+}
+
+@Media (max-width: 1050px) {
+    #container {
+        max-width: 300px;
+    }
+
+    .square {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@Media (max-width: 500px) {
+    #title {
+        font-size: 24px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+
+    .medium-letter {
+        font-size: 18px;
+    }
 }
